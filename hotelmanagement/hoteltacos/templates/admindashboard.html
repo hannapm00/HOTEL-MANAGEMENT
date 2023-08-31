@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurant Admin Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background-color: #f5f5f5;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+    }
+
+    .card p {
+      margin-bottom: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Restaurant Admin Dashboard</h1>
+
+   
+
+    <div class="card">
+      <h2>Menu</h2>
+      <p>Manage the restaurant's menu.</p>
+      <a href="{% url 'mainfood' %}" class="button">menu</a>
+    </div>
+
+    
+
+    <div class="card">
+        <h2>staffs</h2>
+        <a href="{% url 'adminapprovedstaff' %}" class="button">our staff</a>
+        <a href="{% url 'adminviewallstaff' %}" class="button">new</a>
+      </div>
+
+
+
+      <div class="card">
+        <h2>chef</h2>
+        <a href="{% url 'adminapprovedchef' %}" class="button">our chef</a>
+        <a href="{% url 'adminviewallchef' %}" class="button">new</a>
+      </div>
+
+
+      <div class="card">
+        <h2>users</h2>
+        <a href="{% url 'adminviewalloutsideuser' %}" class="button">new users</a>
+        <a href="{% url 'adminapprovedoutsideuser' %}" class="button">approved users</a>
+      </div>
+
+
+      <div class="card">
+        <h2>reservation</h2>
+        <a href="{% url 'viewallreser' %}" class="button">reservation</a>
+        <a href="{% url 'approvedreser' %}" class="button">approved reservation</a>
+      </div>
+
+
+  </div>
+</body>
+</html>

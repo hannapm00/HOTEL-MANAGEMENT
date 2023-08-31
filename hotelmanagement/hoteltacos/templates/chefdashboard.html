@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="../static/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    .card {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .card h2 {
+      margin-top: 0;
+    }
+    
+    .card p {
+      margin-bottom: 0;
+    }
+    
+    .card .button {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    
+    .card .button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid-xl">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="../static/foodlogo.jpg" alt="Bootstrap" width="40" height="30">
+      </a>
+
+    <a class="navbar-brand" href="#">tacos</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">HOME</a>
+        </li>
+      
+       
+
+
+          
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'adminviewallchef' %}">admin profile</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'staff_profile' %}">my profile</a>
+          </li>
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#">contact us</a>
+          </li>
+          
+       
+          
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+</div>
+  <div class="container">
+    <h1>Restaurant chef Dashboard</h1>
+    
+    <div class="card">
+      <h2>Menu</h2>
+      <p>Manage the restaurant's menu.</p>
+      <a href="{% url 'mainfood' %}" class="button">menu</a>
+    </div>
+    
+   
+    
+    <div class="card">
+      <h2>Staff Members</h2>
+      <p>Total staff members: 3</p>
+      <a href="{% url 'adminapprovedstaff' %}" class="button">our staff</a>
+    </div>
+  
+
+  <div class="card">
+    <h2>chef Members</h2>
+    <p>Total staff members: 3</p>
+    <a href="{% url 'adminapprovedchef' %}" class="button">chef</a>
+  </div>
+</div>
+
+
+<div class="card">
+  <h2>reservation</h2>
+  <a href="{% url 'viewallreser' %}" class="button">reservation</a>
+  <a href="{% url 'approvedreser' %}" class="button">approved reservation</a>
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+crossorigin="anonymous"></script>
+</body>
+</html>

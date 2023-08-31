@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="../static/style.css">
+<style>
+  .navbar{
+    background-color: aquamarine;
+  } 
+    
+</style>
+<body>
+     <div class="container-fluid-xl">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="../static/foodlogo.jpg" alt="Bootstrap" width="40" height="30">
+          </a>
+    
+        <a class="navbar-brand" href="#">tacos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="{% url 'index' %}">HOME</a>
+            </li>
+          
+           
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'mainfood' %}">menu</a>
+              </li>
+
+
+              
+             
+
+
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'contactus' %}">contact us</a>
+              </li>
+              
+              
+            
+
+
+
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'loginpagerender' %}"> login</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'career' %}">career</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'reservation' %}">reservation</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'pagerenderoutsiderregister' %}">user register</a>
+              </li>
+           
+              
+            
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    </div>
+    <!-- banner -->
+    <div class="jumbotron jumbotron-fluid" id="banner" style="background-image: url(../static/food8.JPG);">
+        <div class="container text-center text-md-left">
+            <header>
+                <div class="row justify-content-between">
+                    
+                    
+                </div>
+            </header>
+            <h1 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="display-3 text-white font-weight-bold my-5" style="color: black;">
+            	TOCOS<br>
+            	
+            </h1>
+            <p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="lead text-white my-4" >
+                Tcos was made out of a desire to bring the captivating and enrapturing effervescence of a classic Italian trattoria to the hub and bub that is Brisbane’s, James Street.
+            </p>
+            <a href="#" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="btn my-4 font-weight-bold atlas-cta cta-green">today's special</a>
+        </div>
+    </div>
+    <!-- three-blcok -->
+    <div class="container my-5 py-2">
+        <h2 class="text-center font-weight-bold my-5">Our special items</h2>
+        <div class="row">
+            <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center">
+                <img src="../static/food2.jpg" alt="Anti-spam" class="mx-auto" style="height: 50%; width: 90%;">
+                <h4>Italian special combo dish</h4>
+                <p>Lorem ipsum dolor sit amet porro his no his deleniti</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center">
+                <img src="../static/food6.jpg" alt="Phishing Detect" class="mx-auto" style="height: 50%;width: 90%">
+                <h4>rosha rosha dish srilankha</h4>
+                <p>Ne error antiopam usu. Sed vocen concludaturque ea</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center">
+                <img src="../static/food4.jpg" alt="Smart Scan" class="mx-auto" style="height: 50%; width: 90%">
+                <h4>hydrabady chiken biriyani</h4>
+                <p>Et usu ocurreret elaboraret doctus prodesse assueverit.</p>
+            </div>
+        </div>
+    </div>
+    <div class="headind">
+       <center> <h2 class="font-weight-bold">what our expert chef says</h2></center>
+    </div>
+    <!-- feature (skew background) -->
+    <div class="jumbotron jumbotron-fluid feature" id="feature-first">
+        <div class="container my-5">
+            <div class="row justify-content-between text-center text-md-left">
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6">
+                    <h4 class="font-weight-bold">Chef Namitha</h4>
+                    <p class="my-4">Te iisque labitur eos, nec sale argumentum scribentur no,
+                        <br> augue disputando in vim. Erat fugit sit at, ius lorem deserunt deterruisset no.</p>
+                    
+                </div>
+                <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center">
+                    <img src="../static/chef.jpg" alt="Take a look inside" class="mx-auto d-block" style="height: 250px;width: 50%;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- feature (green background) -->
+    
+    <div class="jumbotron jumbotron-fluid feature" id="feature-last" >
+        <div class="container">
+            <div class="row justify-content-between text-center text-md-left">
+                <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 flex-md-last">
+                    <h4 class="font-weight-bold">Chef Rohit</h4>
+                    <p class="my-4">
+                       i have worked here for more than 20years.the best hotel in the town.
+                        <br>i love working here.its the best atmosphere to work.
+                    </p>
+                    
+                </div>
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center flex-md-first">
+                    <img src="../static/chef1.jpg" alt="Safe and reliable" class="mx-auto d-block" style="height: 250px;width: 50%;">
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+
+
+
+    
+
+   
+    <!-- client -->
+    <div class="headind">
+        <center> <h3 class="font-weight-bold" style="color: rgb(79, 138, 76);">more yummy dishes to fill your tummy</h3></center>
+     </div>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                    <img src="../static/food2.jpg" class="mx-auto d-block">
+                </div>
+                <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                    <img src="../static/food3.jpg" class="mx-auto d-block">
+                </div>
+                <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                    <img src="../static/food4.jpg" class="mx-auto d-block">
+                </div>
+                <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                    <img src="../static/food2.jpg" class="mx-auto d-block">
+                </div>
+                <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                    <img src="../static/food3.jpg" class="mx-auto d-block">
+                </div>
+                <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                    <img src="../static/food7.jpg" class="mx-auto d-block">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- from the owner -->
+<div class="headind">
+    <center> <h2 class="font-weight-bold">chief of the hotel</h2></center>
+ </div>
+<div class="jumbotron jumbotron-fluid feature" id="feature-last" >
+    <div class="container">
+        <div class="row justify-content-between text-center text-md-left">
+            <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 flex-md-last">
+                <h4 class="font-weight-bold"></h4>
+                <p class="my-4">
+                   i have worked here for more than 20years.the best hotel in the town.
+                    <br>i love working here.its the best atmosphere to work.
+                </p>
+                
+            </div>
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center flex-md-first">
+                <img src="../static/owner.jpg" alt="Safe and reliable" class="mx-auto d-block" style="height: 250px;width: 50%;">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    <!-- contact -->
+    <div class="jumbotron jumbotron-fluid" id="contact" style="background-image: linear-gradient(black,white);">
+        <div class="container my-5">
+            <div class="row justify-content-between">
+                <div class="col-md-6 text-white">
+                    <h2 class="font-weight-bold">Contact Us</h2>
+                    <p class="my-4">
+                        we are here to fill your tummy with our delicious dishes.
+                        <br> augue disputando in vim. Erat fugit sit at, ius lorem.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li>Email : tocas@gmail.com</li>
+                        <li>Phone : 361-688-5824</li>
+                        <li>Address : 4826 White Avenue, Corpus Christi, Texas</li>
+                    </ul>
+                </div>
+                <div class="col-md-6" >
+                    <form style="color: aliceblue;">
+                    	<div class="row">
+	                        <div class="form-group col-md-6">
+	                            <label for="name">Your Name</label>
+	                            <input type="name" class="form-control" id="name">
+	                        </div>
+	                        <div class="form-group col-md-6">
+	                            <label for="Email">Your Email</label>
+	                            <input type="email" class="form-control" id="Email">
+	                        </div>
+	                    </div>
+	                    <div class="form-group">
+	                        <label for="message">review</label>
+	                        <textarea class="form-control" id="message" rows="3"></textarea>
+	                    </div>
+                        <button type="submit" class="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3">send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<!-- copyright -->
+	<div class="jumbotron jumbotron-fluid" id="copyright">
+        <div class="container">
+            <div class="row justify-content-between">
+            	<center><div class="col-md-4 text-white align-self-center text-center text-md-left my-0">
+                    Copyright © 2018 tacos, Yi-Ya.
+                </div></center>
+             
+            </div>
+        </div>
+    </div>
+    
+    <!-- AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

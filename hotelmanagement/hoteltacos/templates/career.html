@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="../static/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .job-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .job-description {
+      margin-bottom: 20px;
+    }
+
+    .how-to-apply {
+      margin-bottom: 20px;
+    }
+
+    .how-to-apply h3 {
+      margin: 0 0 10px 0;
+    }
+
+    .how-to-apply p {
+      margin: 0;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>looking for job?</h1>
+  </header>
+
+  <div class="container">
+    <div class="job-title">
+      <h2>Chef and Staff</h2>
+    </div>
+    <div class="job-description">
+      <p>We are looking for experienced chefs and staff members to join our team. If you have a passion for cooking and providing excellent customer service, this might be the perfect opportunity for you.</p>
+    </div>
+    <div class="how-to-apply">
+      <h3>How to Apply</h3>
+      <p>Please send your resume and cover letter to tacoos@hotel.com or fill out the application form below:</p>
+      <a href="{% url 'pagerenderstaffregister' %}" class="button">staff</a>
+      <a href="{% url 'pagerenderchefregister' %}" class="button">chef</a>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+crossorigin="anonymous"></script>
+</body>
+</html>
